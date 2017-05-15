@@ -37,6 +37,7 @@ macosx:
 
 lpeg.so: $(FILES)
 	env $(CC) $(DLLFLAGS) $(FILES) -o lpeg.so
+	cp lpeg.so ../lpeg.so
 
 $(FILES): makefile
 
